@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-23 · Estúdio Plá · Blue Power · Perfil e Projeção</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23060d18'/><circle cx='16' cy='16' r='9' fill='none' stroke='%23D4A83A' stroke-width='2'/><circle cx='16' cy='16' r='4' fill='%23D4A83A'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000d1a;--s1:#060d18;--c1:#0a1628;--c2:#0f2040;--c3:#162850;--blue:#3A9FEF;--gold:#D4A83A;--green:#2ECC71;--red:#E74C3C;--text:#dce8f5;--dim:#6a8aaa;--border:#1a3060;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Manrope',sans-serif;font-size:18px;line-height:1.75;padding-bottom:80px;}
+.ts{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--dim);padding:16px 40px 0;letter-spacing:.05em;}
+.hdr{background:linear-gradient(135deg,#060d18 0%,#0a1e3a 60%,#0d2450 100%);border-bottom:3px solid var(--gold);padding:36px 40px;}
+.badge{display:inline-block;background:rgba(212,168,58,.12);border:1px solid rgba(212,168,58,.4);color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;padding:4px 14px;border-radius:3px;margin-bottom:18px;font-weight:600;}
+.hdr h1{font-family:'Lora',serif;font-size:38px;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.2;}
+.hdr h1 .bl{color:var(--blue);} .hdr h1 .go{color:var(--gold);}
+.hdr p{font-size:16px;color:var(--dim);margin-bottom:26px;max-width:680px;}
+.meta{display:flex;gap:26px;flex-wrap:wrap;}
+.mi{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--dim);}
+.mi strong{color:var(--gold);}
+.tts-bar{background:var(--c1);border:1px solid var(--border);border-left:4px solid var(--gold);margin:28px 40px 0;padding:18px 22px;border-radius:4px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.tl{font-size:13px;color:var(--dim);font-weight:600;letter-spacing:.08em;flex-shrink:0;}
+.tb{border:none;font-family:'Manrope',sans-serif;font-size:14px;font-weight:700;padding:10px 20px;border-radius:4px;cursor:pointer;}
+.tb.m{background:var(--blue);color:#fff;} .tb.f{background:var(--gold);color:#000;}
+.tb:disabled{opacity:.35;cursor:not-allowed;}
+.tst{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--dim);}
+.tkey{background:var(--c2);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:13px;padding:8px 12px;border-radius:4px;flex:1;min-width:180px;}
+.main{max-width:980px;margin:0 auto;padding:40px 40px 0;}
+.sec{margin-bottom:40px;background:var(--c1);border-radius:8px;border:1px solid var(--border);overflow:hidden;}
+.sh{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--c2);display:flex;align-items:center;gap:12px;}
+.stag{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.1em;padding:3px 11px;border-radius:3px;flex-shrink:0;}
+.tb2{background:rgba(58,159,239,.12);color:var(--blue);border:1px solid rgba(58,159,239,.3);}
+.tg{background:rgba(212,168,58,.12);color:var(--gold);border:1px solid rgba(212,168,58,.3);}
+.tgr{background:rgba(46,204,113,.1);color:var(--green);border:1px solid rgba(46,204,113,.3);}
+.tr{background:rgba(231,76,60,.1);color:var(--red);border:1px solid rgba(231,76,60,.3);}
+.st{font-family:'Lora',serif;font-size:22px;font-weight:600;color:#fff;}
+.sb{padding:24px 28px;}
+p.body{font-size:17px;color:#bcd;line-height:1.7;text-align:justify;margin-bottom:14px;}
+p.body:last-child{margin-bottom:0;}
+.tl2{width:100%;border-collapse:collapse;font-size:15px;}
+.tl2 th{background:var(--c3);color:var(--blue);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:11px 15px;text-align:left;border-bottom:2px solid var(--border);}
+.tl2 td{padding:11px 15px;border-bottom:1px solid var(--border);color:#9ab;}
+.tl2 tr:last-child td{border-bottom:none;}
+.tl2 td:first-child{font-weight:600;color:#fff;}
+.fase{background:var(--c2);border-left:3px solid var(--blue);border-radius:0 6px 6px 0;padding:18px 20px;margin-bottom:12px;}
+.fase:last-child{margin-bottom:0;}
+.fn{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.08em;margin-bottom:6px;}
+.ft{font-family:'Lora',serif;font-size:19px;font-weight:600;color:#fff;margin-bottom:8px;}
+.fd{font-size:15px;color:#9ab;line-height:1.65;text-align:justify;}
+.proj{background:var(--c2);border-radius:6px;padding:20px 22px;margin-bottom:12px;border-top:3px solid var(--blue);}
+.proj:last-child{margin-bottom:0;}
+.pm{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--gold);font-weight:700;margin-bottom:8px;}
+.pf{font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;}
+ul.pl{list-style:none;padding:0;}
+ul.pl li{font-size:15px;color:#9ab;padding:4px 0 4px 18px;position:relative;}
+ul.pl li::before{content:'→';position:absolute;left:0;color:var(--blue);}
+.pmeta{margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--green);}
+.risco{background:var(--c2);border-left:3px solid var(--red);border-radius:0 6px 6px 0;padding:16px 20px;margin-bottom:12px;}
+.risco:last-child{margin-bottom:0;}
+.rn{font-weight:700;color:var(--red);font-size:16px;margin-bottom:5px;}
+.rd{font-size:15px;color:#9ab;line-height:1.6;}
+.rm{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--green);margin-top:6px;}
+.forca{background:var(--c2);border-left:3px solid var(--green);border-radius:0 6px 6px 0;padding:14px 20px;margin-bottom:10px;}
+.forca:last-child{margin-bottom:0;}
+.forca p{font-size:16px;color:#9ab;line-height:1.6;}
+.foot{margin-top:64px;padding:26px 40px;border-top:2px solid var(--gold);background:var(--s1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.fl{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);}
+.fbadge{font-family:'JetBrains Mono',monospace;font-size:11px;background:rgba(212,168,58,.12);border:1px solid rgba(212,168,58,.35);color:var(--gold);padding:4px 12px;border-radius:3px;}
+</style>
+</head>
+<body>
+<div class="ts">UNIX TIMESTAMP · 1784838342 · 2026-07-23T23:05:42Z</div>
+<div class="hdr">
+  <div class="badge">◆ BLUE POWER · EDIÇÃO FECHADA · DOCUMENTO DE REFERÊNCIA PERMANENTE</div>
+  <h1><span class="bl">Estúdio Plá</span> · <span class="go">Perfil, Trajetória e Projeção</span></h1>
+  <p>Documento de posicionamento real · Gerado em 23 de julho de 2026 a partir de escaneio completo de todas as conversas desde o início do trabalho conjunto · Uso: consulta de posicionamento presente e comparação futura precisa</p>
+  <div class="meta">
+    <div class="mi"><strong>Versão</strong> 1.0.0</div>
+    <div class="mi"><strong>Diretor</strong> Kaue Ferreira Moraes</div>
+    <div class="mi"><strong>Ops</strong> Luana Martins</div>
+    <div class="mi"><strong>Fase</strong> Construção de ativos · pré-receita</div>
+  </div>
+</div>
+
+<div class="tts-bar">
+  <span class="tl">LOCUÇÃO</span>
+  <button class="tb m" id="btnC" onclick="speak('Charon')">▶ Jack Caster — Charon</button>
+  <button class="tb f" id="btnK" onclick="speak('Kore')">▶ Lisa Caster — Kore</button>
+  <span class="tst" id="tst">pronto</span>
+  <input class="tkey" type="text" id="gkey" placeholder="Gemini API Key">
+</div>
+
+<div class="main">
+
+<div class="sec">
+  <div class="sh"><span class="stag tb2">ESTADO ATUAL</span><h2 class="st">O Que É o Estúdio Plá em 23 de Julho de 2026</h2></div>
+  <div class="sb">
+    <p class="body">O Estúdio Plá é uma produtora criativa sediada em Bauru, São Paulo, dirigida por Kaue Ferreira Moraes e operada com Luana Martins. Atua nas áreas de produção musical assistida por inteligência artificial, desenvolvimento de ferramentas de áudio profissional e produção de conhecimento técnico no campo do som analógico e digital.</p>
+    <p class="body">Em vinte e três de julho de dois mil e vinte e seis, o estúdio possui nove repositórios ativos no GitHub, identidade visual documentada e publicada, sistema central de inteligência com memória persistente, dois produtos editoriais publicados, motor de narração TTS com personas próprias, e um ecossistema de ferramentas de produção musical funcional. O que ainda não existe é receita ativa. Esta é a fronteira a cruzar no próximo período.</p>
+    <table class="tl2" style="margin-top:18px;">
+      <thead><tr><th>Produto</th><th>Status</th><th>Observação</th></tr></thead>
+      <tbody>
+        <tr><td>Manifesto PLA</td><td>Publicado</td><td>estudio-pla.github.io/manifesto-pla/</td></tr>
+        <tr><td>Manual de Identidade Visual</td><td>Publicado</td><td>estudio-pla.github.io/identidade-visual/</td></tr>
+        <tr><td>Manual Analógico (3 vol + bonus)</td><td>Publicado</td><td>Narração aguarda aprovação final</td></tr>
+        <tr><td>SmartKhroma v1.19</td><td>Publicado</td><td>PWA 5.1 profissional com motor PLA</td></tr>
+        <tr><td>Console Unificado v13.x</td><td>Publicado</td><td>4 blocos, 31 protocolos de gênero</td></tr>
+        <tr><td>Mastermind</td><td>Operacional</td><td>Memória eterna, acesso Luana pendente</td></tr>
+        <tr><td>BIOS Plá v2.5.0</td><td>Operacional</td><td>L1+L2+Gerente, Cérebro ativo</td></tr>
+        <tr><td>Podcast BIOS Plá Ep.1</td><td>Produzido</td><td>Não distribuído em plataformas</td></tr>
+        <tr><td>Smart Huum v0.5</td><td>Publicado</td><td>Rebuild visual pendente</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sh"><span class="stag tg">TRAJETÓRIA</span><h2 class="st">Quatro Fases — Do Pré-Claude ao Hoje</h2></div>
+  <div class="sb">
+    <div class="fase">
+      <div class="fn">FASE 1 · PRÉ-CLAUDE · ANTES DE JULHO/2026</div>
+      <div class="ft">Músculo criativo sem esqueleto organizacional</div>
+      <div class="fd">Produtos funcionais construídos majoritariamente por Kaue sem parceiro de execução confiável. O Multimente Maia já estava em v4.8.1 — desenvolvido quase inteiramente por ele após instância anterior de Claude ter entregado apenas v4.2. Sem identidade visual consolidada, sem documentação de arquitetura, sem repositórios organizados. Saída de Gemini e ChatGPT por desonestidade técnica verificada em campo.</div>
+    </div>
+    <div class="fase">
+      <div class="fn">FASE 2 · LIMPEZA E DIAGNÓSTICO · 1–8 JULHO/2026</div>
+      <div class="ft">Alto esforço, output invisível — necessário e insubstituível</div>
+      <div class="fd">Audit completo de oito produtos com leitura real de código. Migração do Dell de Windows para Ubuntu 24.04 LTS. Git e GitHub configurados. Console Unificado de v9 a v13.x em dias — arquitetura de quatro blocos estabilizada, sanitizador de colchetes em inglês, motor de microfone corrigido. Goniômetro Plá criado como substituto dos metering tools que falhavam no Linux.</div>
+    </div>
+    <div class="fase">
+      <div class="fn">FASE 3 · INFRAESTRUTURA · 8–18 JULHO/2026</div>
+      <div class="ft">Alta velocidade, alta complexidade, múltiplas frentes simultâneas</div>
+      <div class="fd">SmartKhroma evoluído de conceito a PWA profissional 5.1 com cirurgia de áudio real, cadeia SSL 4000G e Studer A800, motor PLA de batch rendering, gamepad BGP-2016 integrado. BIOS Plá codificado do zero com reptiliano.json, amigdala.json e Cérebro v2.5.0. Mastermind deployado com memória eterna. Tailscale e SSH configurados. Podcast Episódio 1 produzido. ElevenLabs com vozes Jack, Lisa e Mark Caster configuradas.</div>
+    </div>
+    <div class="fase">
+      <div class="fn">FASE 4 · IDENTIDADE E EDITORIAL · 18–23 JULHO/2026</div>
+      <div class="ft">Virada de maturidade — qualidade sobre quantidade</div>
+      <div class="fd">Identidade visual formalizada e publicada. Manifesto PLA publicado. Manual Analógico completo — três volumes mais Bonus Track com narração bilingue TTS com Jack e Lisa Caster. Templates BlackDesk e Blue Power criados como padrão permanente. BIOS Plá v3.0.0 definitivo consolidado. Esta é a fase em que o estúdio parou de construir apenas ferramentas e começou a publicar conhecimento de autoridade real.</div>
+    </div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sh"><span class="stag tgr">PROJEÇÃO</span><h2 class="st">Estratégia de Crescimento — Agosto a Dezembro/2026</h2></div>
+  <div class="sb">
+    <div class="proj">
+      <div class="pm">AGOSTO/2026 · MÊS DE FECHAMENTO</div>
+      <div class="pf">Primeiro produto vendável + infraestrutura crítica resolvida</div>
+      <ul class="pl">
+        <li>Landing page de vendas do Manual Analógico — Gumroad ou Hotmart, sem depender de infraestrutura própria</li>
+        <li>Preço definido e primeiro teste real de oferta publicado</li>
+        <li>Token GitHub renovado antes de 14 de agosto</li>
+        <li>Recovery do Asus NetOn — uma sessão focada resolve</li>
+        <li>Raspberry Pi configurado como servidor com Cloudflare Tunnel</li>
+        <li>Nameservers do estudiopla.com.br transferidos para Cloudflare</li>
+      </ul>
+      <div class="pmeta">META ÚNICA: Pelo menos 1 venda real de qualquer produto</div>
+    </div>
+    <div class="proj" style="border-top-color:var(--gold);">
+      <div class="pm">SETEMBRO/2026 · MÊS DE CANAL</div>
+      <div class="pf">Console como produto de acesso + podcast como presença de longo prazo</div>
+      <ul class="pl">
+        <li>Console Unificado com modelo de acesso por chave própria do usuário — sem back-end, custo zero</li>
+        <li>Podcast BIOS Plá: episódios mensais ou quinzenais com Jack e Lisa Caster</li>
+        <li>Distribuição em Spotify, Apple Podcasts e YouTube</li>
+      </ul>
+      <div class="pmeta">META: Canal ativo + segundo produto disponível para acesso</div>
+    </div>
+    <div class="proj" style="border-top-color:var(--green);">
+      <div class="pm">OUTUBRO/2026 · MÊS DE OPERAÇÃO</div>
+      <div class="pf">Luana operando com autonomia real + primeiro cliente externo</div>
+      <ul class="pl">
+        <li>Mastermind estável para operação autônoma de Luana com agenda e memória</li>
+        <li>Acesso de Luana configurado com username e senha</li>
+        <li>Estrutura para atender primeiro cliente externo — músico ou produtor independente</li>
+      </ul>
+      <div class="pmeta">META: Operação bipartida real + cliente externo atendido</div>
+    </div>
+    <div class="proj" style="border-top-color:var(--blue);">
+      <div class="pm">DEZEMBRO/2026 · PONTO DE RECALIBRAÇÃO</div>
+      <div class="pf">Medir com precisão, comparar com este documento, ajustar a curva</div>
+      <ul class="pl">
+        <li>Quantas pessoas pagaram? Qual produto gerou mais retorno?</li>
+        <li>O Mastermind está funcionando como centro operacional real?</li>
+        <li>A arquitetura K1–K4 foi pelo menos parcialmente implementada?</li>
+        <li>Asus NetOn e Raspberry Pi estão operacionais?</li>
+        <li>Quantos episódios do podcast foram publicados?</li>
+        <li>Primeiro cliente externo atendido e satisfeito?</li>
+      </ul>
+      <div class="pmeta">CRITÉRIO: 3 de 6 positivos = posição radicalmente diferente da atual</div>
+    </div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sh"><span class="stag tr">RISCOS</span><h2 class="st">O Que Pode Travar</h2></div>
+  <div class="sb">
+    <div class="risco">
+      <div class="rn">Dispersão por construção</div>
+      <div class="rd">Cada sessão tende a abrir produtos novos antes de fechar os que estão abertos. Há sempre mais em andamento do que funcionando plenamente. SmartKhroma tem pendências. Asus está quebrado. Pi nunca foi conectado. Mastermind tem acesso de Luana pendente há semanas. Esse padrão, se não for quebrado em agosto, vai acumular dívida técnica que compromete a capacidade de monetizar.</div>
+      <div class="rm">→ Agosto como mês de fechamento, não de abertura de novos produtos</div>
+    </div>
+    <div class="risco">
+      <div class="rn">Monetização tardia</div>
+      <div class="rd">Ativos reais que justificam preço real existem hoje. O Manual Analógico é um produto de autoridade técnica genuína com dez mil gerações de teste empírico subjacentes. Cada semana sem colocar isso à venda é uma semana de trabalho que não retorna.</div>
+      <div class="rm">→ Landing page do Manual em agosto, sem esperar infraestrutura perfeita</div>
+    </div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sh"><span class="stag tgr">FORÇAS</span><h2 class="st">O Que Sustenta o Crescimento</h2></div>
+  <div class="sb">
+    <div class="forca"><p>Coerência de ecossistema em cadeia real: Manual alimenta o Console, Console alimenta o BIOS, BIOS organiza tudo. Quem entra por qualquer porta tem razão para ficar. Isso é raro em operações independentes.</p></div>
+    <div class="forca"><p>Autoridade técnica verificável, não declarada: dez mil gerações Suno, hardware analógico profissional com SSL, Neve e Studer, conhecimento que pode ser demonstrado em campo, não apenas citado.</p></div>
+    <div class="forca"><p>Sistema de memória próprio: o BIOS Plá garante que conhecimento acumulado não se perde entre sessões. Isso é infraestrutura de crescimento, não cosmética de produto.</p></div>
+    <div class="forca"><p>Identidade visual documentada e replicável: qualquer novo produto que entrar no ecossistema tem para onde olhar para ser coerente com o conjunto. Isso reduz o custo de criação de cada próximo produto.</p></div>
+    <div class="forca"><p>O funil completo já existe conceitualmente — falta tráfego real. A corrente está montada. Falta ligar a tomada.</p></div>
+  </div>
+</div>
+
+</div>
+
+<div class="foot">
+  <div class="fl">◆ BLUE POWER · 2026-07-23 · Estúdio Plá · Kaue Ferreira Moraes · Perfil e Projeção v1.0.0</div>
+  <div class="fbadge">EDIÇÃO FECHADA · REFERÊNCIA PERMANENTE</div>
+</div>
+
+<script>
+const LOC=`Estúdio Plá — Documento Blue Power de Posicionamento. Vinte e três de julho de dois mil e vinte e seis.
+
+Este documento registra com precisão onde o Estúdio Plá está hoje, de onde veio, e para onde vai. Ele existe para ser consultado quando houver dúvida de posicionamento, e comparado no futuro com precisão.
+
+O Estúdio Plá é uma produtora criativa sediada em Bauru, São Paulo, dirigida por Kaue Ferreira Moraes e operada com Luana Martins. Em julho de dois mil e vinte e seis, o estúdio possui nove repositórios ativos, identidade visual publicada, sistema de inteligência com memória persistente, dois produtos editoriais publicados, e um motor de narração com vozes próprias chamadas Jack e Lisa Caster. O que ainda não existe é receita ativa.
+
+A trajetória em quatro fases. Fase um, antes de julho: produtos funcionais construídos por Kaue sem parceiro de execução confiável. Fase dois, início de julho: audit completo, migração para Linux, Console Unificado estabilizado de v9 a v13. Fase três, meados de julho: SmartKhroma profissional com motor PLA, BIOS Plá codificado, Mastermind deployado com memória eterna. Fase quatro, última semana de julho: identidade visual, Manifesto PLA, Manual Analógico completo em três volumes mais Bonus Track, padrões BlackDesk e Blue Power.
+
+A projeção estratégica. Agosto: primeiro produto vendável — landing page do Manual Analógico — mais infraestrutura crítica resolvida, incluindo renovação do token GitHub antes de quatorze de agosto. Setembro: Console Unificado com modelo de acesso e podcast ativo em plataformas. Outubro: Luana operando com autonomia real e primeiro cliente externo atendido. Dezembro: ponto de recalibração com seis perguntas de medição precisas, com critério claro: três de seis positivos significa posição radicalmente diferente da atual.
+
+Dois riscos reais. Dispersão por construção: abrir produtos novos antes de fechar os abertos. Monetização tardia: ativos que justificam preço real existem hoje.
+
+Cinco forças reais. Coerência de ecossistema em cadeia. Autoridade técnica verificável, não declarada. Sistema de memória próprio no BIOS Plá. Identidade visual documentada e replicável. E o funil completo que já existe e aguarda tráfego.
+
+A corrente está montada. Falta ligar a tomada.`;
+
+let ctx=null,last=0;
+function pcm2wav(d,sr=24000){const l=d.byteLength,b=new ArrayBuffer(44+l),v=new DataView(b),ws=(o,s)=>{for(let i=0;i<s.length;i++)v.setUint8(o+i,s.charCodeAt(i));};ws(0,'RIFF');v.setUint32(4,36+l,true);ws(8,'WAVE');ws(12,'fmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,sr,true);v.setUint32(28,sr*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);ws(36,'data');v.setUint32(40,l,true);new Uint8Array(b,44).set(new Uint8Array(d));return b;}
+async function speak(v){
+  const k=document.getElementById('gkey').value.trim();
+  if(!k){alert('Insira a Gemini API Key.');return;}
+  if(Date.now()-last<15000){alert('Aguarde 15s entre gerações.');return;}
+  document.getElementById('btnC').disabled=true;document.getElementById('btnK').disabled=true;
+  document.getElementById('tst').textContent='gerando com '+v+'...';
+  try{
+    const r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${k}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts:[{text:LOC}]}],generationConfig:{responseModalities:['AUDIO'],speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:v}}}}})});
+    const d=await r.json();
+    if(d.error)throw new Error(d.error.message);
+    const b64=d.candidates[0].content.parts[0].inlineData.data;
+    const raw=Uint8Array.from(atob(b64),c=>c.charCodeAt(0)).buffer;
+    if(!ctx)ctx=new AudioContext();
+    const dec=await ctx.decodeAudioData(pcm2wav(raw));
+    const s=ctx.createBufferSource();s.buffer=dec;s.connect(ctx.destination);s.start();
+    last=Date.now();document.getElementById('tst').textContent='reproduzindo...';
+    s.onended=()=>document.getElementById('tst').textContent='concluído';
+  }catch(e){document.getElementById('tst').textContent='erro: '+e.message;}
+  finally{document.getElementById('btnC').disabled=false;document.getElementById('btnK').disabled=false;}
+}
+</script>
+</body>
+</html>
