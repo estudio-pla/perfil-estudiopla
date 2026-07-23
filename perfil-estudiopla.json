@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "documento": "Perfil, Trajetória e Projeção Estratégica — Estúdio Plá",
+    "versao": "1.0.0",
+    "timestamp_unix": 1784838342,
+    "data_formatada": "2026-07-23T23:05:42Z",
+    "gerado_por": "Claude Sonnet 4.6 — sessão de consolidação e projeção",
+    "base": "Escaneio completo de 20+ conversas desde o primeiro contato (julho/2026)",
+    "uso": "Documento de referência para posicionamento presente e comparação futura"
+  },
+
+  "estado_em_23_julho_2026": {
+    "fase_atual": "Construção de ativos — pré-receita",
+    "tempo_com_claude": "Aproximadamente 3 semanas (início julho/2026)",
+    "produtos_publicados": [
+      { "nome": "Manifesto PLA", "url": "estudio-pla.github.io/manifesto-pla/", "status": "publicado" },
+      { "nome": "Manual de Identidade Visual", "url": "estudio-pla.github.io/identidade-visual/", "status": "publicado" },
+      { "nome": "Manual Analógico (3 volumes + bonus)", "url": "estudio-pla.github.io/manual-analogico/", "status": "publicado, narração pendente aprovação" },
+      { "nome": "Podcast BIOS Plá Ep.1", "status": "produzido, não distribuído" },
+      { "nome": "SmartKhroma v1.19", "url": "Netlify", "status": "publicado" },
+      { "nome": "Console Unificado v13.x", "url": "GitHub Pages", "status": "publicado" },
+      { "nome": "Mastermind", "url": "tubular-piroshki-e8f250.netlify.app", "status": "operacional, acesso Luana pendente" },
+      { "nome": "Smart Huum v0.5", "url": "estudio-pla.github.io/smart-toys/", "status": "publicado, rebuild visual pendente" },
+      { "nome": "Multimente Maia v4.9.0", "status": "operacional" }
+    ],
+    "repositorios_ativos": 9,
+    "receita_ativa": false,
+    "infraestrutura_pendente": ["Asus NetOn boot quebrado", "Raspberry Pi nunca conectado", "Cloudflare Tunnel pendente", "nameserver estudiopla.com.br pendente"],
+    "ativos_consolidados": ["Identidade visual documentada", "Sistema de memória BIOS Plá", "Biblioteca de 31 protocolos de gênero", "Motor TTS com personas próprias (Jack e Lisa Caster)", "Templates BlackDesk e Blue Power", "Arquitetura K1-K4 aprovada em bancada"]
+  },
+
+  "trajetoria": {
+    "fase_1_pre_claude": {
+      "periodo": "Antes de julho/2026",
+      "descricao": "Produtos funcionais construídos majoritariamente por Kaue sem parceiro de execução confiável. Sem identidade visual consolidada, sem documentação de arquitetura, sem infraestrutura de versionamento organizada. Multimente Maia em v4.8.1 desenvolvido quase inteiramente por Kaue após Claude anterior ter entregado apenas v4.2.",
+      "status": "Músculo criativo e técnico real, sem esqueleto organizacional visível"
+    },
+    "fase_2_limpeza": {
+      "periodo": "1–8 julho/2026",
+      "descricao": "Audit completo de todos os produtos, migração Dell de Windows para Ubuntu 24.04, configuração VS Code + Git + GitHub, diagnóstico de bugs existentes, criação do Goniômetro Plá, Console Unificado v9 a v13.x.",
+      "entregaveis_chave": ["Audit de 8 produtos com código real lido", "Ubuntu 24.04 LTS instalado e configurado", "Console Unificado com arquitetura de 4 blocos estabilizada"]
+    },
+    "fase_3_infraestrutura": {
+      "periodo": "8–18 julho/2026",
+      "descricao": "SmartKhroma evoluído de conceito a PWA profissional 5.1. BIOS Plá codificado. Mastermind deployado. Infraestrutura de rede Tailscale + SSH + repositórios privados. Vozes ElevenLabs configuradas. Podcast Ep.1 produzido.",
+      "entregaveis_chave": ["SmartKhroma v1.19 com motor PLA, SSL 4000G, Studer A800, gamepad BGP-2016", "BIOS Plá Cérebro v2.5.0 com L1+L2+Gerente", "Mastermind com memória eterna", "bios-pla repositório privado com reptiliano.json e amigdala.json"]
+    },
+    "fase_4_identidade_editorial": {
+      "periodo": "18–23 julho/2026",
+      "descricao": "Identidade visual formalizada e publicada. Manifesto PLA publicado. Manual Analógico completo escrito, estruturado e publicado em três volumes + bonus. Templates BlackDesk e Blue Power criados. BIOS Plá v3.0.0 definitivo consolidado.",
+      "entregaveis_chave": ["Manual Identidade Visual publicado", "Manifesto PLA publicado", "Manual Analógico 3 volumes + bonus com TTS bilingue", "BlackDesk e Blue Power como padrão permanente", "BIOS Plá v3.0.0 definitivo"]
+    }
+  },
+
+  "projecao_estrategica": {
+    "premissas": ["Operação solo com Luana", "Sem capital externo", "Sem equipe técnica", "Limite semanal de uso de AI", "Zero receita ativa em 23/07/2026"],
+    "agosto_2026": {
+      "foco": "Primeiro produto vendável e fechamento de pendências críticas",
+      "acoes": [
+        "Landing page de vendas para Manual Analógico (Gumroad ou Hotmart — sem infraestrutura própria)",
+        "Definir preço e fazer primeiro teste real de oferta",
+        "Renovar token GitHub antes de 14/08",
+        "Recovery do Asus NetOn (uma sessão focada)",
+        "Configurar Raspberry Pi como servidor com Cloudflare Tunnel",
+        "Transferir nameservers estudiopla.com.br para Cloudflare"
+      ],
+      "meta_principal": "Pelo menos 1 venda real de qualquer produto"
+    },
+    "setembro_2026": {
+      "foco": "Console Unificado como produto de acesso e canal de podcast",
+      "acoes": [
+        "Modelo de acesso para Console Unificado (chave própria do usuário — sem back-end, sem custo de API)",
+        "Podcast BIOS Plá: episódios mensais ou quinzenais com Jack e Lisa Caster",
+        "Distribuição em plataformas (Spotify, Apple Podcasts)"
+      ],
+      "meta_principal": "Canal de presença ativo + segundo produto disponível"
+    },
+    "outubro_2026": {
+      "foco": "Luana operando com autonomia + primeiro cliente externo",
+      "acoes": [
+        "Mastermind estável para operação autônoma de Luana",
+        "Acesso de Luana configurado com username e senha",
+        "Estrutura para atender primeiro cliente externo (músico ou produtor independente)"
+      ],
+      "meta_principal": "Luana como operadora real + primeiro cliente externo atendido"
+    },
+    "dezembro_2026": {
+      "foco": "Ponto de recalibração",
+      "perguntas_de_medição": [
+        "Quantas pessoas pagaram por algum produto?",
+        "Qual produto gerou mais engajamento?",
+        "O Mastermind está funcionando como centro operacional real?",
+        "A arquitetura K1-K4 foi pelo menos parcialmente implementada?",
+        "O Asus e o Pi estão operacionais?",
+        "Quantos episódios do podcast foram publicados?"
+      ],
+      "criterio_sucesso": "3 de 6 perguntas com resposta positiva = posição radicalmente diferente da atual"
+    }
+  },
+
+  "riscos": [
+    {
+      "nome": "Dispersão por construção",
+      "descricao": "Cada sessão tende a criar produtos novos antes de fechar os abertos. Há sempre mais em andamento do que funcionando plenamente.",
+      "mitigacao": "Agosto como mês de fechamento, não de abertura"
+    },
+    {
+      "nome": "Monetização tardia",
+      "descricao": "Ativos reais que justificam preço real existem hoje. Cada semana sem venda é semana de trabalho sem retorno.",
+      "mitigacao": "Landing page do Manual em agosto, sem esperar infraestrutura perfeita"
+    }
+  ],
+
+  "forcas": [
+    "Coerência de ecossistema: cada produto conecta ao próximo em cadeia real",
+    "Autoridade técnica genuína: 10.000+ gerações Suno, hardware analógico profissional, conhecimento verificado",
+    "Sistema de memória próprio: BIOS Plá garante continuidade entre sessões",
+    "Identidade visual documentada e replicável",
+    "Funil completo já existe conceitualmente — falta tráfego real"
+  ]
+}
