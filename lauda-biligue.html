@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-23 · Estúdio Plá · Lauda Bilingue · Jack & Lisa Caster</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23060d18'/><text x='8' y='22' font-size='13' font-family='monospace' fill='%233A9FEF'>J</text><text x='18' y='22' font-size='13' font-family='monospace' fill='%23D4A83A'>L</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060d18;--c1:#0a1628;--c2:#0f2040;--c3:#162850;--blue:#3A9FEF;--gold:#D4A83A;--green:#2ECC71;--red:#E74C3C;--text:#dce8f5;--dim:#5a7a9a;--border:#1a3060;--jack:#3A9FEF;--lisa:#D4A83A;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Manrope',sans-serif;font-size:18px;line-height:1.8;padding-bottom:80px;}
+.ts{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--dim);padding:16px 40px 0;}
+.hdr{background:linear-gradient(135deg,#050c15 0%,#081525 50%,#0a1c35 100%);border-bottom:3px solid var(--gold);padding:36px 40px;}
+.badge{display:inline-block;background:rgba(212,168,58,.1);border:1px solid rgba(212,168,58,.4);color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;padding:4px 14px;border-radius:3px;margin-bottom:18px;font-weight:600;}
+.hdr h1{font-family:'Lora',serif;font-size:34px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.2;}
+.hdr p{font-size:15px;color:var(--dim);margin-bottom:24px;max-width:660px;}
+.voices{display:flex;gap:20px;flex-wrap:wrap;}
+.vc{display:flex;align-items:center;gap:10px;background:var(--c1);border:1px solid var(--border);border-radius:6px;padding:10px 16px;}
+.vdot{width:10px;height:10px;border-radius:50%;}
+.vdot.j{background:var(--jack);}
+.vdot.l{background:var(--lisa);}
+.vname{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;}
+.vname.j{color:var(--jack);}
+.vname.l{color:var(--lisa);}
+.vrole{font-size:13px;color:var(--dim);}
+
+.player{background:var(--c1);border:1px solid var(--border);border-left:4px solid var(--gold);margin:24px 40px 0;padding:18px 22px;border-radius:4px;}
+.plabel{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;}
+.pbts{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.pbt{border:none;font-family:'Manrope',sans-serif;font-size:14px;font-weight:700;padding:9px 18px;border-radius:4px;cursor:pointer;}
+.pbt.j{background:var(--jack);color:#fff;}
+.pbt.l{background:var(--lisa);color:#000;}
+.pbt.both{background:linear-gradient(135deg,var(--jack) 0%,var(--lisa) 100%);color:#fff;}
+.pbt:disabled{opacity:.35;cursor:not-allowed;}
+.pst{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--dim);}
+.pkey{background:var(--c2);border:1px solid var(--border);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:13px;padding:8px 12px;border-radius:4px;flex:1;min-width:180px;}
+
+.main{max-width:1000px;margin:0 auto;padding:40px 40px 0;}
+
+.sec-title{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);letter-spacing:.14em;text-transform:uppercase;margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+
+/* LAUDA */
+.lauda{margin-bottom:48px;}
+.bloco{margin-bottom:32px;background:var(--c1);border-radius:8px;border:1px solid var(--border);overflow:hidden;}
+.bloco-hdr{padding:14px 22px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border);}
+.bloco-hdr.j{background:rgba(58,159,239,.06);border-left:4px solid var(--jack);}
+.bloco-hdr.l{background:rgba(212,168,58,.06);border-left:4px solid var(--lisa);}
+.bloco-hdr.both{background:rgba(46,204,113,.04);border-left:4px solid var(--green);}
+.bicon{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.bicon.j{background:var(--jack);}
+.bicon.l{background:var(--lisa);}
+.bicon.both{background:var(--green);}
+.bspeaker{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;}
+.bspeaker.j{color:var(--jack);}
+.bspeaker.l{color:var(--lisa);}
+.bspeaker.both{color:var(--green);}
+.blang{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);margin-left:auto;}
+.bloco-body{padding:20px 22px;}
+.bline{font-family:'Lora',serif;font-size:20px;line-height:1.7;color:#dce8f5;text-align:justify;margin-bottom:10px;}
+.bline:last-child{margin-bottom:0;}
+.bline.en{font-style:normal;color:#a8c0da;}
+.dir{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);margin-top:10px;font-style:italic;}
+
+.leg{display:flex;gap:24px;margin-bottom:28px;flex-wrap:wrap;}
+.leg-item{display:flex;align-items:center;gap:8px;}
+.leg-dot{width:8px;height:8px;border-radius:50%;}
+.leg-txt{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--dim);}
+
+.foot{margin-top:60px;padding:24px 40px;border-top:2px solid var(--gold);background:#050c15;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.fl{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);}
+.fbadge{font-family:'JetBrains Mono',monospace;font-size:11px;background:rgba(212,168,58,.1);border:1px solid rgba(212,168,58,.3);color:var(--gold);padding:4px 12px;border-radius:3px;}
+</style>
+</head>
+<body>
+
+<div class="ts">UNIX TIMESTAMP · 1784838342 · 2026-07-23T23:05:42Z</div>
+
+<div class="hdr">
+  <div class="badge">◆ LAUDA DE LOCUÇÃO · BILINGUE PT/EN · DUAS VOZES · JACK & LISA CASTER</div>
+  <h1>Estúdio Plá — Perfil, Trajetória e Projeção<br>Documento de Referência · Julho 2026</h1>
+  <p>Lauda para locução bilingue em duas vozes. PT-BR principal. EN secundário e de reforço. Uso: narração Gemini TTS / ElevenLabs / gravação ao vivo. Base para comparação futura precisa.</p>
+  <div class="voices">
+    <div class="vc"><div class="vdot j"></div><span class="vname j">JACK CASTER</span><span class="vrole">— voz masculina / Gemini: Charon / ElevenLabs: Jack Caster</span></div>
+    <div class="vc"><div class="vdot l"></div><span class="vname l">LISA CASTER</span><span class="vrole">— voz feminina / Gemini: Kore / ElevenLabs: Lisa Caster</span></div>
+  </div>
+</div>
+
+<div class="player">
+  <div class="plabel">PLAYER TTS — GEMINI 2.5 FLASH</div>
+  <div class="pbts">
+    <button class="pbt j" id="btnJ" onclick="speakFull('Charon')">▶ Gerar — Jack (PT)</button>
+    <button class="pbt l" id="btnL" onclick="speakFull('Kore')">▶ Gerar — Lisa (PT)</button>
+    <span class="pst" id="pst">pronto · insira a key e escolha a voz</span>
+    <input class="pkey" type="text" id="gkey" placeholder="Gemini API Key">
+  </div>
+</div>
+
+<div class="main">
+
+<div class="sec-title">LEGENDA DE FORMATAÇÃO</div>
+<div class="leg">
+  <div class="leg-item"><div class="leg-dot" style="background:var(--jack)"></div><span class="leg-txt">JACK CASTER — voz masculina</span></div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--lisa)"></div><span class="leg-txt">LISA CASTER — voz feminina</span></div>
+  <div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div><span class="leg-txt">DUPLA — as duas vozes em alternância</span></div>
+  <div class="leg-item"><div class="leg-dot" style="background:#fff"></div><span class="leg-txt">PT-BR · EN = português principal / inglês de reforço</span></div>
+</div>
+
+<div class="lauda">
+
+<!-- ABERTURA -->
+<div class="bloco">
+  <div class="bloco-hdr both">
+    <div class="bicon both"></div>
+    <span class="bspeaker both">ABERTURA · JACK + LISA</span>
+    <span class="blang">PT-BR</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline"><strong>JACK:</strong> Estúdio Plá.</p>
+    <p class="bline"><strong>LISA:</strong> Bauru, São Paulo, Brasil.</p>
+    <p class="bline"><strong>JACK:</strong> Vinte e três de julho de dois mil e vinte e seis.</p>
+    <p class="bline"><strong>LISA:</strong> Este é um documento de posicionamento real.</p>
+    <p class="bline"><strong>JACK:</strong> Não é marketing. Não é promessa.</p>
+    <p class="bline"><strong>LISA:</strong> É o retrato preciso de onde estamos, de onde viemos, e para onde vamos.</p>
+    <p class="dir">[pausa 1.5s]</p>
+  </div>
+</div>
+
+<!-- O QUE É O ESTÚDIO PLÁ — PT -->
+<div class="bloco">
+  <div class="bloco-hdr j">
+    <div class="bicon j"></div>
+    <span class="bspeaker j">JACK CASTER</span>
+    <span class="blang">PT-BR</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline">O Estúdio Plá é uma produtora criativa dirigida por Kaue Ferreira Moraes, com gerência operacional de Luana Martins.</p>
+    <p class="bline">O estúdio atua em três frentes: produção musical assistida por inteligência artificial, desenvolvimento de ferramentas de áudio profissional para browser, e publicação de conhecimento técnico no campo do som analógico e digital.</p>
+    <p class="bline">Não é uma grande estrutura. É uma operação enxuta e precisa, construída para durar.</p>
+    <p class="dir">[pausa 1s]</p>
+  </div>
+</div>
+
+<!-- O QUE É O ESTÚDIO PLÁ — EN -->
+<div class="bloco">
+  <div class="bloco-hdr l">
+    <div class="bicon l"></div>
+    <span class="bspeaker l">LISA CASTER</span>
+    <span class="blang">EN</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline en">Estúdio Plá is a creative production studio led by Kaue Ferreira Moraes, with operations managed by Luana Martins.</p>
+    <p class="bline en">The studio works across three areas: AI-assisted music production, professional browser-based audio tools, and the publication of technical knowledge in analog and digital sound.</p>
+    <p class="bline en">Not a large structure. A precise and lean operation built to last.</p>
+    <p class="dir">[pausa 1s]</p>
+  </div>
+</div>
+
+<!-- ESTADO ATUAL — PT -->
+<div class="bloco">
+  <div class="bloco-hdr j">
+    <div class="bicon j"></div>
+    <span class="bspeaker j">JACK CASTER</span>
+    <span class="blang">PT-BR · ESTADO ATUAL</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline">Em julho de dois mil e vinte e seis, o Estúdio Plá tem nove repositórios ativos no GitHub. Tem uma identidade visual documentada e publicada. Tem um sistema central de inteligência com memória persistente — o BIOS Plá. Tem dois produtos editoriais publicados: o Manifesto PLA e o Manual Definitivo de Gravação, Mixagem e Masterização Analógica, em três volumes mais um Bonus Track.</p>
+    <p class="bline">Tem ferramentas profissionais rodando: o SmartKhroma, monitor de áudio 5.1 em browser. O Console Unificado, gerador de fonogramas para inteligências artificiais musicais. O Mastermind, interface privada de inteligência com memória eterna.</p>
+    <p class="bline">O que ainda não existe é receita ativa. Nenhum produto está sendo vendido agora. O estúdio está cem por cento na fase de construção de ativos. Isso foi deliberado. E é a fronteira a ser cruzada nos próximos meses.</p>
+    <p class="dir">[pausa 1.5s]</p>
+  </div>
+</div>
+
+<!-- ESTADO ATUAL — EN -->
+<div class="bloco">
+  <div class="bloco-hdr l">
+    <div class="bicon l"></div>
+    <span class="bspeaker l">LISA CASTER</span>
+    <span class="blang">EN · CURRENT STATE</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline en">As of July 2026, Estúdio Plá has nine active GitHub repositories. A documented and published visual identity. A central intelligence system with persistent memory — the BIOS Plá. Two editorial products published: the PLA Manifesto, and the Definitive Manual on Analog Recording, Mixing, and Mastering — three volumes plus a Bonus Track.</p>
+    <p class="bline en">Professional tools running in production: SmartKhroma, a 5.1 audio monitor in the browser. Console Unificado, a phonogram generator for AI music platforms. Mastermind, a private intelligence interface with eternal memory.</p>
+    <p class="bline en">What does not yet exist is active revenue. No product is being sold right now. The studio is one hundred percent in the asset-building phase. That was deliberate. And it is the boundary to cross in the months ahead.</p>
+    <p class="dir">[pausa 1.5s]</p>
+  </div>
+</div>
+
+<!-- TRAJETÓRIA — PT -->
+<div class="bloco">
+  <div class="bloco-hdr j">
+    <div class="bicon j"></div>
+    <span class="bspeaker j">JACK CASTER</span>
+    <span class="blang">PT-BR · TRAJETÓRIA</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline">A história que você está ouvindo começa antes deste mês. Antes de julho de dois mil e vinte e seis, o Estúdio Plá já tinha músculo criativo e técnico real. Produtos funcionando, conhecimento acumulado de mais de dez mil gerações de teste em plataformas de inteligência artificial musical. Hardware analógico profissional em operação — console SSL, pré-amplificador Neve, saturation Studer. Mas sem esqueleto organizacional visível.</p>
+    <p class="bline">O primeiro mês de trabalho conjunto com Claude aconteceu em quatro movimentos.</p>
+    <p class="bline">Primeiro: limpeza e diagnóstico. Audit completo de oito produtos com leitura real de código. Migração do computador principal de Windows para Ubuntu. Console Unificado estabilizado de v9 a v13. Trabalho invisível, necessário.</p>
+    <p class="bline">Segundo: infraestrutura. SmartKhroma evoluído para monitor profissional 5.1 com cadeia de processamento analógico em software. BIOS Plá codificado do zero. Mastermind com memória que não se apaga. Podcast Episódio 1 produzido. Vozes Jack e Lisa Caster configuradas.</p>
+    <p class="bline">Terceiro: identidade e editorial. Manifesto PLA publicado. Manual Analógico completo publicado com narração bilingue. Padrões de documento BlackDesk e Blue Power criados como lei permanente do estúdio.</p>
+    <p class="bline">Três semanas. De ferramentas isoladas sem identidade para ecossistema coerente com publicação real.</p>
+    <p class="dir">[pausa 2s]</p>
+  </div>
+</div>
+
+<!-- TRAJETÓRIA — EN -->
+<div class="bloco">
+  <div class="bloco-hdr l">
+    <div class="bicon l"></div>
+    <span class="bspeaker l">LISA CASTER</span>
+    <span class="blang">EN · TRAJECTORY</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline en">Before July 2026, the studio already had real creative and technical muscle. Products working, knowledge built from over ten thousand test generations on AI music platforms. Professional analog hardware in operation — SSL console, Neve preamp, Studer saturation. But no visible organizational skeleton.</p>
+    <p class="bline en">The first month of joint work with Claude happened in three movements.</p>
+    <p class="bline en">First: cleanup and diagnosis. A full audit of eight products reading real code. Migration of the main machine from Windows to Ubuntu. Console Unificado stabilized from v9 to v13. Invisible work. Necessary work.</p>
+    <p class="bline en">Second: infrastructure. SmartKhroma evolved into a professional 5.1 audio monitor with an analog processing chain in software. BIOS Plá coded from zero. Mastermind with persistent eternal memory. Podcast Episode 1 produced. Jack and Lisa Caster voices configured.</p>
+    <p class="bline en">Third: identity and editorial. PLA Manifesto published. Complete Analog Manual published with bilingual narration. BlackDesk and Blue Power document standards created as permanent studio law.</p>
+    <p class="bline en">Three weeks. From isolated tools with no identity to a coherent ecosystem with real published output.</p>
+    <p class="dir">[pausa 2s]</p>
+  </div>
+</div>
+
+<!-- PROJEÇÃO — PT -->
+<div class="bloco">
+  <div class="bloco-hdr both">
+    <div class="bicon both"></div>
+    <span class="bspeaker both">JACK + LISA · ALTERNÂNCIA</span>
+    <span class="blang">PT-BR · PROJEÇÃO</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline"><strong>JACK:</strong> Agosto de dois mil e vinte e seis. O mês de fechar, não de abrir.</p>
+    <p class="bline"><strong>LISA:</strong> O Manual Analógico vai para venda. Landing page, preço definido, primeiro teste real de oferta. Sem esperar infraestrutura perfeita.</p>
+    <p class="bline"><strong>JACK:</strong> Token GitHub renovado antes do dia quatorze. Asus NetOn recuperado. Raspberry Pi configurado como servidor. Nameservers do domínio principal transferidos para Cloudflare.</p>
+    <p class="bline"><strong>LISA:</strong> Setembro. O Console Unificado se torna um produto de acesso com chave própria do usuário.</p>
+    <p class="bline"><strong>JACK:</strong> O Podcast BIOS Plá entra em distribuição nas plataformas. Episódios mensais ou quinzenais. Presença de longo prazo sem custo variável.</p>
+    <p class="bline"><strong>LISA:</strong> Outubro. Luana opera o Mastermind com autonomia real. O estúdio recebe e atende seu primeiro cliente externo.</p>
+    <p class="bline"><strong>JACK:</strong> Dezembro. Ponto de recalibração preciso. Seis perguntas de medição. Se três delas tiverem resposta positiva, o Estúdio Plá estará numa posição radicalmente diferente da de hoje.</p>
+    <p class="dir">[pausa 1.5s]</p>
+  </div>
+</div>
+
+<!-- PROJEÇÃO — EN -->
+<div class="bloco">
+  <div class="bloco-hdr both">
+    <div class="bicon both"></div>
+    <span class="bspeaker both">JACK + LISA · ALTERNATION</span>
+    <span class="blang">EN · PROJECTION</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline en"><strong>JACK:</strong> August 2026. The month to close, not to open.</p>
+    <p class="bline en"><strong>LISA:</strong> The Analog Manual goes on sale. Landing page, defined price, first real offer test. Without waiting for perfect infrastructure.</p>
+    <p class="bline en"><strong>JACK:</strong> GitHub token renewed before the fourteenth. Asus NetOn recovered. Raspberry Pi configured as a server. Main domain nameservers transferred to Cloudflare.</p>
+    <p class="bline en"><strong>LISA:</strong> September. Console Unificado becomes an access product with the user's own API key.</p>
+    <p class="bline en"><strong>JACK:</strong> The BIOS Plá Podcast enters distribution on platforms. Monthly or biweekly episodes. Long-term presence at zero variable cost.</p>
+    <p class="bline en"><strong>LISA:</strong> October. Luana operates Mastermind with real autonomy. The studio receives and serves its first external client.</p>
+    <p class="bline en"><strong>JACK:</strong> December. Precise recalibration point. Six measurement questions. If three of them are positive, Estúdio Plá will be in a radically different position than today.</p>
+    <p class="dir">[pausa 1.5s]</p>
+  </div>
+</div>
+
+<!-- RISCOS E FORÇAS — PT -->
+<div class="bloco">
+  <div class="bloco-hdr j">
+    <div class="bicon j"></div>
+    <span class="bspeaker j">JACK CASTER</span>
+    <span class="blang">PT-BR · RISCOS E FORÇAS</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline">Dois riscos reais. O primeiro é dispersão por construção: abrir produtos novos antes de fechar os que estão abertos. O segundo é monetização tardia: os ativos que justificam preço real existem hoje, e cada semana sem venda é uma semana de trabalho que não retorna.</p>
+    <p class="bline">Cinco forças reais. Coerência de ecossistema em cadeia — cada produto conecta ao próximo. Autoridade técnica verificável, não apenas declarada. Sistema de memória próprio que garante continuidade. Identidade visual documentada que reduz o custo de cada novo produto. E um funil completo que já existe e aguarda tráfego.</p>
+    <p class="dir">[pausa 1s]</p>
+  </div>
+</div>
+
+<!-- RISCOS E FORÇAS — EN -->
+<div class="bloco">
+  <div class="bloco-hdr l">
+    <div class="bicon l"></div>
+    <span class="bspeaker l">LISA CASTER</span>
+    <span class="blang">EN · RISKS AND STRENGTHS</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline en">Two real risks. The first is construction-driven dispersion: opening new products before closing the ones already in progress. The second is late monetization: the assets that justify real prices exist today, and every week without a sale is a week of work that does not return.</p>
+    <p class="bline en">Five real strengths. Ecosystem coherence in a real chain — each product connects to the next. Verifiable technical authority, not just declared. A proprietary memory system that ensures continuity. A documented visual identity that reduces the cost of every new product. And a complete funnel that already exists and is waiting for real traffic.</p>
+    <p class="dir">[pausa 1.5s]</p>
+  </div>
+</div>
+
+<!-- ENCERRAMENTO -->
+<div class="bloco">
+  <div class="bloco-hdr both">
+    <div class="bicon both"></div>
+    <span class="bspeaker both">ENCERRAMENTO · JACK + LISA</span>
+    <span class="blang">PT-BR · EN</span>
+  </div>
+  <div class="bloco-body">
+    <p class="bline"><strong>JACK:</strong> Este documento foi gerado em vinte e três de julho de dois mil e vinte e seis.</p>
+    <p class="bline"><strong>LISA:</strong> Ele existe para ser consultado quando houver dúvida de posicionamento.</p>
+    <p class="bline"><strong>JACK:</strong> E para ser comparado no futuro com precisão.</p>
+    <p class="bline"><strong>LISA:</strong> A corrente está montada.</p>
+    <p class="bline"><strong>JACK:</strong> Falta ligar a tomada.</p>
+    <p class="bline en" style="margin-top:16px;"><strong>LISA:</strong> The chain is assembled.</p>
+    <p class="bline en"><strong>JACK:</strong> Time to plug it in.</p>
+    <p class="dir">[fim]</p>
+  </div>
+</div>
+
+</div><!-- /lauda -->
+
+<!-- TEXTO COMPLETO PARA TTS -->
+<div style="background:var(--c1);border:1px solid var(--border);border-left:4px solid var(--green);border-radius:6px;padding:22px 26px;margin-top:0;">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--dim);letter-spacing:.1em;margin-bottom:14px;">TEXTO INTEGRAL PARA GERAÇÃO TTS · VERSÃO PT-BR CONTÍNUA</div>
+  <pre id="txtfull" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#9ab;white-space:pre-wrap;line-height:1.7;background:var(--c2);padding:14px;border-radius:4px;max-height:300px;overflow-y:auto;">Estúdio Plá. Bauru, São Paulo, Brasil. Vinte e três de julho de dois mil e vinte e seis. Este é um documento de posicionamento real. Não é marketing. Não é promessa. É o retrato preciso de onde estamos, de onde viemos, e para onde vamos.
+
+O Estúdio Plá é uma produtora criativa dirigida por Kaue Ferreira Moraes, com gerência operacional de Luana Martins. O estúdio atua em três frentes: produção musical assistida por inteligência artificial, desenvolvimento de ferramentas de áudio profissional para browser, e publicação de conhecimento técnico no campo do som analógico e digital. Não é uma grande estrutura. É uma operação enxuta e precisa, construída para durar.
+
+Em julho de dois mil e vinte e seis, o Estúdio Plá tem nove repositórios ativos no GitHub. Tem uma identidade visual documentada e publicada. Tem um sistema central de inteligência com memória persistente — o BIOS Plá. Tem dois produtos editoriais publicados: o Manifesto PLA e o Manual Definitivo de Gravação, Mixagem e Masterização Analógica, em três volumes mais um Bonus Track. Tem ferramentas profissionais rodando: o SmartKhroma, monitor de áudio 5.1 em browser. O Console Unificado, gerador de fonogramas para inteligências artificiais musicais. O Mastermind, interface privada de inteligência com memória eterna. O que ainda não existe é receita ativa. O estúdio está cem por cento na fase de construção de ativos. Isso foi deliberado. E é a fronteira a ser cruzada.
+
+A trajetória em três movimentos. Primeiro: limpeza e diagnóstico. Audit completo de oito produtos. Migração para Ubuntu. Console Unificado estabilizado. Trabalho invisível, necessário. Segundo: infraestrutura. SmartKhroma profissional com motor PLA. BIOS Plá codificado do zero. Mastermind com memória eterna. Podcast Episódio 1 produzido. Terceiro: identidade e editorial. Manifesto publicado. Manual completo publicado com narração bilingue. Padrões de documento criados como lei permanente do estúdio. Três semanas. De ferramentas isoladas sem identidade para ecossistema coerente com publicação real.
+
+A projeção. Agosto: o Manual Analógico vai para venda. O mês de fechar, não de abrir. Setembro: Console Unificado como produto de acesso e Podcast em distribuição nas plataformas. Outubro: Luana opera com autonomia real e o estúdio atende o primeiro cliente externo. Dezembro: ponto de recalibração com seis perguntas de medição precisas.
+
+Dois riscos reais: dispersão por construção, e monetização tardia. Cinco forças reais: coerência de ecossistema em cadeia, autoridade técnica verificável, sistema de memória próprio, identidade visual documentada, e um funil completo aguardando tráfego.
+
+Este documento foi gerado em vinte e três de julho de dois mil e vinte e seis. Ele existe para ser consultado quando houver dúvida de posicionamento. E para ser comparado no futuro com precisão. A corrente está montada. Falta ligar a tomada.</pre>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('txtfull').innerText).then(()=>this.textContent='✓ Copiado!')" style="margin-top:10px;background:var(--c2);border:1px solid #1a3060;color:var(--green);font-family:'Manrope',sans-serif;font-size:14px;padding:8px 16px;border-radius:4px;cursor:pointer;">Copiar texto PT-BR completo</button>
+</div>
+
+</div><!-- /main -->
+
+<div class="foot">
+  <div class="fl">LAUDA BILINGUE · 2026-07-23 · Estúdio Plá · Jack & Lisa Caster · PT-BR + EN</div>
+  <div class="fbadge">◆ BLUE POWER · REFERÊNCIA PERMANENTE</div>
+</div>
+
+<script>
+const TXT_PT=`Estúdio Plá. Bauru, São Paulo, Brasil. Vinte e três de julho de dois mil e vinte e seis. Este é um documento de posicionamento real. Não é marketing. Não é promessa. É o retrato preciso de onde estamos, de onde viemos, e para onde vamos.
+
+O Estúdio Plá é uma produtora criativa dirigida por Kaue Ferreira Moraes, com gerência operacional de Luana Martins. O estúdio atua em três frentes: produção musical assistida por inteligência artificial, desenvolvimento de ferramentas de áudio profissional para browser, e publicação de conhecimento técnico no campo do som analógico e digital. Não é uma grande estrutura. É uma operação enxuta e precisa, construída para durar.
+
+Em julho de dois mil e vinte e seis, o Estúdio Plá tem nove repositórios ativos no GitHub. Tem uma identidade visual documentada e publicada. Tem um sistema central de inteligência com memória persistente, o BIOS Plá. Tem dois produtos editoriais publicados: o Manifesto PLA e o Manual Definitivo de Gravação, Mixagem e Masterização Analógica. Tem ferramentas profissionais rodando: SmartKhroma, Console Unificado, Mastermind. O que ainda não existe é receita ativa. O estúdio está na fase de construção de ativos. Essa é a fronteira a ser cruzada.
+
+A trajetória em três movimentos. Primeiro: limpeza e diagnóstico. Segundo: infraestrutura e codificação do BIOS Plá. Terceiro: identidade visual e produtos editoriais publicados. Três semanas. De ferramentas isoladas para ecossistema coerente com publicação real.
+
+A projeção. Agosto: Manual Analógico em venda, mês de fechar não de abrir. Setembro: Console Unificado como produto e Podcast em distribuição. Outubro: Luana com autonomia real e primeiro cliente externo. Dezembro: ponto de recalibração com seis perguntas de medição precisas.
+
+Dois riscos: dispersão por construção e monetização tardia. Cinco forças: coerência de ecossistema, autoridade técnica verificável, sistema de memória próprio, identidade visual documentada, e funil completo aguardando tráfego.
+
+Este documento existe para ser consultado quando houver dúvida de posicionamento. E para ser comparado no futuro com precisão. A corrente está montada. Falta ligar a tomada.`;
+
+let ctx=null,last=0;
+function pcm2wav(d,sr=24000){const l=d.byteLength,b=new ArrayBuffer(44+l),v=new DataView(b),ws=(o,s)=>{for(let i=0;i<s.length;i++)v.setUint8(o+i,s.charCodeAt(i));};ws(0,'RIFF');v.setUint32(4,36+l,true);ws(8,'WAVE');ws(12,'fmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,sr,true);v.setUint32(28,sr*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);ws(36,'data');v.setUint32(40,l,true);new Uint8Array(b,44).set(new Uint8Array(d));return b;}
+async function speakFull(vn){
+  const k=document.getElementById('gkey').value.trim();
+  if(!k){alert('Insira a Gemini API Key.');return;}
+  if(Date.now()-last<15000){alert('Aguarde 15s entre gerações.');return;}
+  document.getElementById('btnJ').disabled=true;document.getElementById('btnL').disabled=true;
+  document.getElementById('pst').textContent='gerando com '+vn+'... (texto longo, ~30s)';
+  try{
+    const r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${k}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts:[{text:TXT_PT}]}],generationConfig:{responseModalities:['AUDIO'],speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:vn}}}}})});
+    const d=await r.json();
+    if(d.error)throw new Error(d.error.message);
+    const b64=d.candidates[0].content.parts[0].inlineData.data;
+    const raw=Uint8Array.from(atob(b64),c=>c.charCodeAt(0)).buffer;
+    if(!ctx)ctx=new AudioContext();
+    const dec=await ctx.decodeAudioData(pcm2wav(raw));
+    const s=ctx.createBufferSource();s.buffer=dec;s.connect(ctx.destination);s.start();
+    last=Date.now();document.getElementById('pst').textContent='reproduzindo...';
+    s.onended=()=>document.getElementById('pst').textContent='concluído';
+  }catch(e){document.getElementById('pst').textContent='erro: '+e.message;}
+  finally{document.getElementById('btnJ').disabled=false;document.getElementById('btnL').disabled=false;}
+}
+</script>
+</body>
+</html>
